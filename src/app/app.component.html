@@ -1,12 +1,58 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<div class ="container">
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav">
+	      <li class="nav-item">
+	        <a class="nav-link" routerLink="/test">Test</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" routerLink="/documents">Document</a>
+	      </li>
+
+	      <li class="nav-item dropdown">
+	      	<!-- <div ngbDropdown class="d-inline-block dropdown-links">
+	      		<button class="btn btn-outline-primary" id="proposalDropdown" ngbDropdownToggle>
+	      			Proposals
+	      		</button>
+	      		<div class="dropdown-menu" aria-labelledby="proposalDropdown">
+	      			<a class="dropdown-item" routerLink="/proposals">Proposal</a>
+	      			<a class="dropdown-item" routerLink="/proposal/new">New Proposal</a>
+	      		</div>
+	      	</div> -->
+
+	      	<div class="btn-group mr-3">
+  			  <div class="btn-group" ngbDropdown role="group">
+    			<button class="btn btn-outline-primary" ngbDropdownToggle>Drop me</button>
+			    <div class="dropdown-menu" ngbDropdownMenu>
+			      <a class="dropdown-item" routerLink="/proposals">Proposal</a>
+			      <a class="dropdown-item" routerLink="/proposals/new">New Proposal</a>
+			    </div>
+  			  </div>
+			</div>
+	      </li>
+	    </ul>
+	  </div>
+	</div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
   </h1>
   <a routerLink='/test'> test </a>
   <a routerLink='/documents'> Documents </a>
   <a routerLink='/proposals'> Proposals </a>
-  <a routerLink='/proposals/new'> New Proposals </a>
+  <a routerLink='/proposals/new'> New Proposals </a> -->
   <router-outlet></router-outlet>
- </div>
+ <!-- </div> -->
 
