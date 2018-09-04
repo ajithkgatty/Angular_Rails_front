@@ -3,7 +3,8 @@ import { Proposal } from './proposal'
 
 @Component({
 	selector: 'proposals',
-	templateUrl: 'proposal-list.component.html'
+	templateUrl: 'proposal-list.component.html',
+	styleUrls: ['proposal-list.component.css']
 })
 
 export class ProposalListComponent {
