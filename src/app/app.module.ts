@@ -5,6 +5,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { HttpModule } from '@angular/http';
 import { DocumentsComponent } from './documents/documents.component';
 import { DocumentService} from './documents/document.service'
 import { ProposalListComponent } from './proposals/proposal-list.component';
@@ -24,7 +25,8 @@ import { ProposalShowComponent } from './proposals/proposal-show.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    HttpModule
   ],
   providers: [
     DocumentService

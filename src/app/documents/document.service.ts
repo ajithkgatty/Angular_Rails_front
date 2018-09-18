@@ -13,8 +13,8 @@ export class DocumentService {
 
     getDocuments(): Observable<Document[]> {
         return this.http.get(this.documentURL)
-                    .pipe(map((response: Response) => <Document[]> response.json()))
-                    .catchError(this.handleError);
+                    .pipe(map((response: Response) => <Document[]> response.json()),
+                     catchError(this.handleError));          
     }
 
     private handleError (error: Response | any) {
